@@ -66,7 +66,7 @@ const { authMiddleware } = require("../../middleware/authMiddleware.js");
  *  description: the movies managing api
  * /api/movies/[id]/[token]:
  *  get:
- *      summary: Fetching movies data
+ *      summary: Fetching 1 movie data
  *      tags: [Movies]
  *      requestBody: true
  *      content:
@@ -116,7 +116,7 @@ const { authMiddleware } = require("../../middleware/authMiddleware.js");
  *  description: the movies managing api
  * /api/movies/[id]:
  *  delete:
- *      summary: Adding data to database
+ *      summary: Deleting data from database
  *      tags: [Movies]
  *      requestBody: true
  *      content:
@@ -125,7 +125,7 @@ const { authMiddleware } = require("../../middleware/authMiddleware.js");
  *                  $ref: '#/components/schemas/Movies'
  *      responses:
  *          200:
- *              description: created movies data
+ *              description: Movies data remove sucessfully.
  *              content:
  *                  application/json:
  *                      schema:
@@ -141,7 +141,7 @@ const { authMiddleware } = require("../../middleware/authMiddleware.js");
  *  description: the movies managing api
  * /api/movies/[id]:
  *  put:
- *      summary: Adding data to database
+ *      summary: Updating data to database
  *      tags: [Movies]
  *      requestBody: true
  *      content:
@@ -150,7 +150,7 @@ const { authMiddleware } = require("../../middleware/authMiddleware.js");
  *                  $ref: '#/components/schemas/Movies'
  *      responses:
  *          200:
- *              description: created movies data
+ *              description: Movies updated sucessfully.
  *              content:
  *                  application/json:
  *                      schema:

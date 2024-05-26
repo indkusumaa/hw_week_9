@@ -43,7 +43,7 @@ const removeMoviesById = (req, res) => {
 
     pool.query(queries.removeMoviesById, [id], (error, result) => {
       if (error) throw error;
-      res.status(200).send("Student remove sucessfully.");
+      res.status(200).send("Movies data remove sucessfully.");
     });
   });
 };
